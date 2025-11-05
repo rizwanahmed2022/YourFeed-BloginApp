@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | YourFeed</title>
+  <link rel="stylesheet" href="styles/home.css" />
   <style>
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -139,7 +140,7 @@ input:checked + .slider:before {
 /* Save Button */
 .save-btn {
   display: block;
-  margin: 15px auto;
+  margin: 30px auto;
   padding: 12px 30px;
   border: none;
   border-radius: 8px;
@@ -177,6 +178,8 @@ input:checked + .slider:before {
 </head>
 <body>
 
+
+
 <div class="dashboard-container">
   <h2 class="dashboard-title">Admin Dashboard</h2>
 
@@ -195,20 +198,19 @@ input:checked + .slider:before {
     <div class="user-right">
       <label for="adminCheck1">Admin</label>
       <label class="switch">
-        <input type="checkbox" id="adminCheck">
+        <input type="checkbox" id="adminCheck" >
         <span class="slider"></span>
       </label>
     </div>
   </div>
 
-  <!-- Go to Home Button -->
-  <button class="save-btn" onclick="window.location.href='index.html'">Go to Home</button>
+  
 
-  <!-- Save Changes Button -->
   <button class="save-btn">Save Changes</button>
 </div>
 
-<script type="module" src="scripts/admin.js"></script>
 
+<script type="module" src="scripts/admin.js"></script>
+\
 </body>
 </html>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | YourFeed</title>
+  <link rel="stylesheet" href="styles/home.css" />
   <style>
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -139,7 +140,7 @@ input:checked + .slider:before {
 /* Save Button */
 .save-btn {
   display: block;
-  margin: 15px auto;
+  margin: 30px auto;
   padding: 12px 30px;
   border: none;
   border-radius: 8px;
@@ -177,6 +178,28 @@ input:checked + .slider:before {
 </head>
 <body>
 
+  <!-- Navbar -->
+<header class="navbar">
+  <div class="logo">YourFeed</div>
+
+  <!-- Navigation links -->
+  <nav class="nav-links">
+    <a href="/admin-dashboard.html" class="nav-item">Admin Dashboard</a>
+  </nav>
+
+  <div class="user-section">
+    <div class="user-info">
+      <span class="user-name"></span>
+      <img src="#" alt="Profile Picture" class="profile-pic">
+    </div>
+
+    <div class="auth-buttons">
+      <button id="signin-btn" class="btn sign-in">Sign In</button>
+      <button id="logout-btn" class="btn sign-out">Sign Out</button>
+    </div>
+  </div>
+</header>
+
 <div class="dashboard-container">
   <h2 class="dashboard-title">Admin Dashboard</h2>
 
@@ -195,20 +218,25 @@ input:checked + .slider:before {
     <div class="user-right">
       <label for="adminCheck1">Admin</label>
       <label class="switch">
-        <input type="checkbox" id="adminCheck">
+        <input type="checkbox" id="adminCheck" >
         <span class="slider"></span>
       </label>
     </div>
   </div>
 
-  <!-- Go to Home Button -->
-  <button class="save-btn" onclick="window.location.href='index.html'">Go to Home</button>
+  
 
-  <!-- Save Changes Button -->
   <button class="save-btn">Save Changes</button>
 </div>
 
-<script type="module" src="scripts/admin.js"></script>
 
+<script type="module" src="scripts/app.js"></script>
+<script type="module" src="scripts/admin.js"></script>
+<script>
+  const x = document.querySelector('.nav-item');
+
+  x.innerHTML = 'Home'
+  x.href = '/index.html'
+</script>
 </body>
 </html>
