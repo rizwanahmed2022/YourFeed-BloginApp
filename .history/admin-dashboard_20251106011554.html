@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | YourFeed</title>
+  <link rel="stylesheet" href="styles/home.css" />
+  <style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #111;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 3px solid #0066ff;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* User Card */
+.user-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  transition: all 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Left side: Profile + Details */
+.user-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-left img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0066ff;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.user-details p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.user-details strong {
+  color: #0052cc;
+}
+
+/* Right side: Admin toggle */
+.user-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-right label {
+  font-weight: 600;
+  color: #444;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 26px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #0066ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Save Button */
+.save-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0066ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+}
+
+.save-btn:hover {
+  background-color: #0052cc;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .user-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .user-right {
+    align-self: flex-end;
+  }
+
+  .user-left img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+<header class="navbar">
+  <div class="logo">YourFeed</div>
+
+  <!-- Navigation links -->
+  <nav class="nav-links">
+    <a href="/admin-dashboard.html" class="nav-item">Admin Dashboard</a>
+  </nav>
+
+  <div class="user-section">
+    <div class="user-info">
+      <span class="user-name"></span>
+      <img src="#" alt="Profile Picture" class="profile-pic">
+    </div>
+
+    <div class="auth-buttons">
+      <button id="signin-btn" class="btn sign-in">Sign In</button>
+      <button id="logout-btn" class="btn sign-out">Sign Out</button>
+    </div>
+  </div>
+</header>
+
+<div class="dashboard-container">
+  <h2 class="dashboard-title">Admin Dashboard</h2>
+
+  <!-- User Card 1 -->
+  <div class="user-card">
+    <div class="user-left">
+      <img src="https://res.cloudinary.com/deex2hwgz/image/upload/v1762370730/cfvb4lymqxie1rqyyrsb.jpg" alt="Profile Picture">
+      <div class="user-details">
+        <p><strong>Full Name:</strong> Rizwan Baloch</p>
+        <p><strong>Email:</strong> irizwanms@gmail.com</p>
+        <p><strong>Category:</strong> web-development</p>
+        <p><strong>UID:</strong> q7l1mTBHykaUt8gFVYlwYT1NxCk1</p>
+      </div>
+    </div>
+
+    <div class="user-right">
+      <label for="adminCheck1">Admin</label>
+      <label class="switch">
+        <input type="checkbox" id="adminCheck">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  
+
+  <button class="save-btn">Save Changes</button>
+</div>
+
+
+<script type="module" src="scripts/app.js"></script>
+<script>
+  const x = document.querySelector('.nav-item');
+  const y = document.querySelector('#adminCheck');
+  y.value = 
+  x.innerHTML = 'Home'
+  x.href = '/index.html'
+</script>
+</body>
+</html>

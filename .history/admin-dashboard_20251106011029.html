@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | YourFeed</title>
+  <link rel="stylesheet" href="styles/home.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+<header class="navbar">
+  <div class="logo">YourFeed</div>
+
+  <!-- Navigation links -->
+  <nav class="nav-links">
+    <a href="/admin-dashboard.html" class="nav-item">Admin Dashboard</a>
+  </nav>
+
+  <div class="user-section">
+    <div class="user-info">
+      <span class="user-name"></span>
+      <img src="#" alt="Profile Picture" class="profile-pic">
+    </div>
+
+    <div class="auth-buttons">
+      <button id="signin-btn" class="btn sign-in">Sign In</button>
+      <button id="logout-btn" class="btn sign-out">Sign Out</button>
+    </div>
+  </div>
+</header>
+
+<div class="dashboard-container">
+  <h2 class="dashboard-title">Admin Dashboard</h2>
+
+  <!-- User Card 1 -->
+  <div class="user-card">
+    <div class="user-left">
+      <img src="https://res.cloudinary.com/deex2hwgz/image/upload/v1762370730/cfvb4lymqxie1rqyyrsb.jpg" alt="Profile Picture">
+      <div class="user-details">
+        <p><strong>Full Name:</strong> Rizwan Baloch</p>
+        <p><strong>Email:</strong> irizwanms@gmail.com</p>
+        <p><strong>Category:</strong> web-development</p>
+        <p><strong>UID:</strong> q7l1mTBHykaUt8gFVYlwYT1NxCk1</p>
+      </div>
+    </div>
+
+    <div class="user-right">
+      <label for="adminCheck1">Admin</label>
+      <label class="switch">
+        <input type="checkbox" id="adminCheck1">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <!-- User Card 2 -->
+  <div class="user-card">
+    <div class="user-left">
+      <img src="https://via.placeholder.com/90" alt="Profile Picture">
+      <div class="user-details">
+        <p><strong>Full Name:</strong> Ali Khan</p>
+        <p><strong>Email:</strong> alikhan@example.com</p>
+        <p><strong>Category:</strong> graphic-design</p>
+        <p><strong>UID:</strong> a2h3kTBHykaUt8gFDYlwYT1MxBv3</p>
+      </div>
+    </div>
+
+    <div class="user-right">
+      <label for="adminCheck2">Admin</label>
+      <label class="switch">
+        <input type="checkbox" id="adminCheck2" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <!-- User Card 3 -->
+  <div class="user-card">
+    <div class="user-left">
+      <img src="https://via.placeholder.com/90" alt="Profile Picture">
+      <div class="user-details">
+        <p><strong>Full Name:</strong> Sara Ahmed</p>
+        <p><strong>Email:</strong> sara@example.com</p>
+        <p><strong>Category:</strong> ui-ux</p>
+        <p><strong>UID:</strong> s9d3mTBHykaUt8gFRYlwYT1NxZx7</p>
+      </div>
+    </div>
+
+    <div class="user-right">
+      <label for="adminCheck3">Admin</label>
+      <label class="switch">
+        <input type="checkbox" id="adminCheck3">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <button class="save-btn">Save Changes</button>
+</div>
+
+
+<script type="module" src="scripts/app.js"></script>
+<script>
+  const x = document.querySelector('.nav-item');
+  x.innerHTML = 'Home'
+  x.href = '/index.html'
+</script>
+</body>
+</html>

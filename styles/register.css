@@ -1,0 +1,140 @@
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Register Page ===== */
+body {
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.register-card {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.register-card h2 {
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.register-card p {
+  color: #555;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group select {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #0066ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,102,255,0.3);
+}
+
+/* Profile Picture Button */
+.file-upload {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file-upload div {
+  padding: 0.6rem 1rem;
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+
+
+.file-upload div:hover {
+  background-color: #004fcc;
+}
+
+.file-upload input[type="file"] {
+  cursor: pointer;
+}
+
+/* Register Button */
+.register-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #004fcc;
+}
+
+/* Extra Links */
+.register-extra {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.register-extra a {
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.register-extra a:hover {
+  color: #004fcc;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 2rem 1.5rem;
+  }
+}

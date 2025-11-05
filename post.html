@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Blog</title>
+  <style>
+    /* Basic Page Styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fb;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Container Box */
+    .container {
+      background: #fff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    /* Heading */
+    .container h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    /* Form Styling */
+    .blog-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-form label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    .blog-form input,
+    .blog-form textarea {
+      padding: 12px 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      margin-bottom: 18px;
+      resize: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .blog-form input:focus,
+    .blog-form textarea:focus {
+      border-color: #0078ff;
+      outline: none;
+    }
+
+    /* Add Picture Button (as p tag) */
+    .add-picture-btn {
+      text-align: center;
+      background-color: #e8f0ff;
+      color: #0078ff;
+      border: 2px dashed #0078ff;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .add-picture-btn:hover {
+      background-color: #0078ff;
+      color: #fff;
+      border-color: #0078ff;
+    }
+
+    /* Submit Button */
+    .submit-btn {
+      background-color: #0078ff;
+      color: #fff;
+      font-size: 1.1rem;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #005fcc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Post a New Blog</h1>
+    <form class="blog-form">
+      <label for="title">Blog Title</label>
+      <input type="text" id="title" name="title" placeholder="Enter your blog title" required>
+
+      <label for="excerpt">Short Description</label>
+      <textarea id="excerpt" name="excerpt" rows="3" placeholder="Write a short summary..." required></textarea>
+
+      <label for="content">Blog Content</label>
+      <textarea id="content" name="content" rows="8" placeholder="Write your full blog content here..." required></textarea>
+
+      <!-- Add Picture Button (you can handle it with JS later) -->
+      <p class="add-picture-btn" id="addPicture">+ Add Picture</p>
+
+      <button type="submit" class="submit-btn">Post Blog</button>
+    </form>
+  </div>
+
+  
+  <script src="https://upload-widget.cloudinary.com/latest/global/all.js" type="text/javascript"></script>  
+  <script type="module" src="scripts/post.js"></script>
+</body>
+</html>
