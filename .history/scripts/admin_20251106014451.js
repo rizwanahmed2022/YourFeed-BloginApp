@@ -26,24 +26,29 @@ async function getDataFromDB(userId) {
   );
   const querySnapshot = await getDocs(q);
   querySnapshot.forEach((user)=>{
-  
+    console.log(user.data().fullname)
+    console.log(user.data().email)
+    console.log(user.data().category)
+    console.log(user.data().uid)
+    console.log(user.data().profile)
+    console.log(user.data().admin)
     userCard.innerHTML +=`
     
      <div class="user-card">
     <div class="user-left">
-      <img src="${user.data().profile}" alt="Profile Picture">
+      <img src="${user.data().admin}" alt="Profile Picture">
       <div class="user-details">
         <p><strong>Full Name:</strong> ${user.data().fullname}</p>
         <p><strong>Email:</strong> ${user.data().email}</p>
         <p><strong>Category:</strong> ${user.data().category}</p>
-        <p><strong>UID:</strong> ${user.data().uid}</p>
+        <p><strong>UID:</strong> ${user.data().admin}</p>
       </div>
     </div>
 
     <div class="user-right">
       <label for="adminCheck1">Admin</label>
       <label class="switch">
-        <input type="checkbox" id="adminCheck" ${user.data().admin}>
+        <input type="checkbox" id="adminCheck">
         <span class="slider"></span>
       </label>
     </div>

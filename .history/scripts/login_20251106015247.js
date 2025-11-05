@@ -4,11 +4,10 @@ import { auth } from "./firebaseConfig.js";
 const form = document.querySelector("#form");
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
-const btn = document.querySelector(".login-btn");
+const btn = document.querySelector("#login-btn");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  btn.innerHTML = 'loading...'
 
   console.log(email.value);
   console.log(password.value);

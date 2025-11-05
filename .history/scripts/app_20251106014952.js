@@ -30,7 +30,6 @@ onAuthStateChanged(auth, (user) => {
     profilePic.style.display = 'block'
     userName.style.display = 'block'
     startWritin.style.display = 'block'
-    navItem.style.display = 'block'
     
   } else {
     signinBtn.style.display = 'block'
@@ -38,7 +37,6 @@ onAuthStateChanged(auth, (user) => {
     profilePic.style.display = 'none'
     userName.style.display = 'none'
     startWritin.style.display = 'none'
-    navItem.style.display = 'none'
     console.log("not logged in");
   }
 });

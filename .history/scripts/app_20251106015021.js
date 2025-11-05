@@ -37,8 +37,8 @@ onAuthStateChanged(auth, (user) => {
     logoutBtn.style.display = 'none'
     profilePic.style.display = 'none'
     userName.style.display = 'none'
+    navItem.style.display = 'block'
     startWritin.style.display = 'none'
-    navItem.style.display = 'none'
     console.log("not logged in");
   }
 });

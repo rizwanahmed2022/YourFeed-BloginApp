@@ -26,7 +26,12 @@ async function getDataFromDB(userId) {
   );
   const querySnapshot = await getDocs(q);
   querySnapshot.forEach((user)=>{
-  
+    console.log(user.data().fullname)
+    console.log(user.data().email)
+    console.log(user.data().category)
+    console.log(user.data().uid)
+    console.log(user.data().profile)
+    console.log(user.data().admin)
     userCard.innerHTML +=`
     
      <div class="user-card">

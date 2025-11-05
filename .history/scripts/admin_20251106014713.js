@@ -26,7 +26,7 @@ async function getDataFromDB(userId) {
   );
   const querySnapshot = await getDocs(q);
   querySnapshot.forEach((user)=>{
-  
+   
     userCard.innerHTML +=`
     
      <div class="user-card">

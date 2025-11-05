@@ -8,7 +8,7 @@ const btn = document.querySelector(".login-btn");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  btn.innerHTML = 'loading...'
+  btn.
 
   console.log(email.value);
   console.log(password.value);
