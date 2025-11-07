@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | YourFeed</title>
+  <link rel="stylesheet" href="styles/home.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+<header class="navbar">
+  <div class="logo">YourFeed</div>
+
+  <!-- Navigation links -->
+  <nav class="nav-links">
+    <a href="/admin-dashboard.html" class="nav-item">Admin Dashboard</a>
+  </nav>
+
+
+  
+  <div class="user-section">
+    <div class="user-info">
+      <span class="user-name"></span>
+      <img src="#" alt="Profile Picture" class="profile-pic">
+    </div>
+
+    <div class="auth-buttons">
+      <button id="signin-btn" class="btn sign-in">Sign In</button>
+      <button id="logout-btn" class="btn sign-out">Sign Out</button>
+    </div>
+  </div>
+</header>
+
+
+
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Share Your Voice with the World</h1>
+    <p>YourFeed is where ideas come to life — read, write, and connect with people who inspire you.</p>
+    <div class="hero-buttons">
+      <a id="startwritin" href="post.html" class="startwritin btn primary">Start Writing</a>
+      <a href="#" class="btn secondary">Explore Blogs</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Blogging Illustration">
+  </div>
+</section>
+
+
+
+
+
+
+<!-- User Feed Section -->
+<section class="feed-section">
+  <h2 class="section-title">Your Blogs</h2>
+  <p class="section-subtitle">Posts written by you, sorted by latest</p>
+
+  <div class="feed">
+    <!-- Blog 1 -->
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=800&q=80" alt="React Hooks">
+      <div class="blog-content">
+        <h3>Understanding React Hooks</h3>
+        <p class="author">by John Doe • Nov 1, 2025</p>
+        <p class="excerpt">Hooks simplify how we manage state and side effects in React apps. This blog explains the basics and advanced patterns...</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=800&q=80" alt="React Hooks">
+      <div class="blog-content">
+        <h3>Understanding React Hooks</h3>
+        <p class="author">by John Doe • Nov 1, 2025</p>
+        <p class="excerpt">Hooks simplify how we manage state and side effects in React apps. This blog explains the basics and advanced patterns...</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=800&q=80" alt="React Hooks">
+      <div class="blog-content">
+        <h3>Understanding React Hooks</h3>
+        <p class="author">by John Doe • Nov 1, 2025</p>
+        <p class="excerpt">Hooks simplify how we manage state and side effects in React apps. This blog explains the basics and advanced patterns...</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </article>
+
+    <!-- Blog 2 -->
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=800&q=80" alt="Morning Routines">
+      <div class="blog-content">
+        <h3>Why Morning Routines Matter</h3>
+        <p class="author">by John Doe • Nov 2, 2025</p>
+        <p class="excerpt">Creating a morning routine sets the tone for your entire day. Learn tips and tricks to build a routine that actually works...</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+
+
+<!-- Featured Users Carousel -->
+<section class="featured-users-carousel">
+  <h2 class="section-title">Featured Bloggers</h2>
+  <p class="section-subtitle">Discover and subscribe to your favorite writers</p>
+
+  <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+      <!-- Example Users -->
+      <div class="user-card">
+        <img src="https://i.pravatar.cc/100?img=1" alt="John Doe">
+        <h3>John Doe</h3>
+        <p class="passion">Tech & AI</p>
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+      <div class="user-card">
+        <img src="https://i.pravatar.cc/100?img=2" alt="Emily Clark">
+        <h3>Emily Clark</h3>
+        <p class="passion">Travel & Photography</p>
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+      <div class="user-card">
+        <img src="https://i.pravatar.cc/100?img=3" alt="Michael Smith">
+        <h3>Michael Smith</h3>
+        <p class="passion">Lifestyle & Fitness</p>
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+      <div class="user-card">
+        <img src="https://i.pravatar.cc/100?img=4" alt="Sophia Lee">
+        <h3>Sophia Lee</h3>
+        <p class="passion">Art & Design</p>
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+      <div class="user-card">
+        <img src="https://i.pravatar.cc/100?img=5" alt="David Brown">
+        <h3>David Brown</h3>
+        <p class="passion">Gaming & Tech</p>
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+      <div class="user-card">
+        <img src="https://i.pravatar.cc/100?img=6" alt="Linda Green">
+        <h3>Linda Green</h3>
+        <p class="passion">Food & Travel</p>
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+      <!-- You can duplicate more users here or dynamically inject them -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- App Info -->
+    <div class="footer-brand">
+      <h2>YourFeed</h2>
+      <p>Share your ideas. Connect with creators.</p>
+    </div>
+
+    <!-- Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Terms & Privacy</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">LN</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>© 2025 YourFeed. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script type="module" src="scripts/app.js"></script>
+</body>
+</html>

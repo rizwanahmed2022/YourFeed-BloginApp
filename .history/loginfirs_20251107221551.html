@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Required</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .message-box {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      padding: 40px 30px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    .login-btn {
+      background-color: #0078ff;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .login-btn:hover {
+      background-color: #005fcc;
+    }
+  </style>
+</head>
+<body>
+  <div class="message-box">
+    <h2>Login Required</h2>
+    <p>Oops! You need to be logged in to post a new blog.<br>
+    Please log in or create an account to continue.</p>
+    <a href="login.html" class="login-btn">Go to Login</a>
+  </div>
+</body>
+</html>
