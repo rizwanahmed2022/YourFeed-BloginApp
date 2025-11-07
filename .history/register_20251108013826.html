@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourFeed - Register</title>
+    <link rel="stylesheet" href="styles/register.css" />
+  </head>
+  <body>
+    <div class="register-container">
+      <div class="register-card">
+        <h2>Create Your Account</h2>
+        <p>Join YourFeed and start sharing your ideas today.</p>
+
+        <form id="form">
+          <!-- Full Name -->
+          <div class="input-group">
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="atleae 6 digit  password"
+              required
+            />
+          </div>
+
+          <!-- Select Category -->
+          <div class="input-group">
+            <label for="category">Select Category</label>
+            <select id="category" name="category" required>
+              <option value="" disabled selected>Select your passion</option>
+              <option value="technology">Technology</option>
+              <option value="travel">Travel</option>
+              <option value="food">Food</option>
+              <option value="fashion">Fashion</option>
+              <option value="software-development">Software Development</option>
+              <option value="web-development">Web Development</option>
+              <option value="mobile-app-development">
+                Mobile App Development
+              </option>
+              <option value="programming-languages">
+                Programming Languages
+              </option>
+              <option value="artificial-intelligence">
+                Artificial Intelligence (AI)
+              </option>
+              <option value="machine-learning">Machine Learning</option>
+              <option value="data-science">Data Science</option>
+              <option value="cloud-computing">Cloud Computing</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="networking">Networking</option>
+              <option value="blockchain">Blockchain & Cryptocurrency</option>
+              <option value="devops">DevOps</option>
+              <option value="iot">Internet of Things (IoT)</option>
+              <option value="robotics">Robotics</option>
+              <option value="database-management">Database Management</option>
+              <option value="big-data">Big Data</option>
+              <option value="virtual-reality">
+                Virtual Reality (VR) / Augmented Reality (AR)
+              </option>
+              <option value="game-development">Game Development</option>
+              <option value="computer-hardware">Computer Hardware</option>
+              <option value="software-testing">Software Testing & QA</option>
+              <option value="ui-ux-design">UI/UX Design</option>
+              <option value="cloud-security">Cloud Security</option>
+              <option value="operating-systems">Operating Systems</option>
+              <option value="programming-tutorials">
+                Programming Tutorials
+              </option>
+              <option value="tech-news">Tech News & Trends</option>
+              <option value="computing-education">Computing Education</option>
+              <option value="sports">Sports</option>
+              <option value="education">Education</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="health">Health & Fitness</option>
+              <option value="lifestyle">Lifestyle</option>
+              <option value="photography">Photography</option>
+              <option value="art">Art & Design</option>
+              <option value="science">Science</option>
+              <option value="gaming">Gaming</option>
+              <option value="music">Music</option>
+              <option value="movies">Movies & TV</option>
+              <option value="politics">Politics</option>
+              <option value="business">Business & Finance</option>
+              <option value="personal-development">Personal Development</option>
+              <option value="parenting">Parenting</option>
+              <option value="nature">Nature & Environment</option>
+              <option value="spirituality">Spirituality</option>
+              <option value="history">History</option>
+              <option value="comedy">Comedy & Humor</option>
+            </select>
+          </div>
+
+          <!-- Profile Picture Button -->
+          <div class="input-group">
+            <label for="profile-pic">Profile Picture</label>
+            <div class="file-upload">
+              <div >Add Profile Picture</div>
+            </div>
+          </div>
+
+          <!-- Register Button -->
+          <button id="btn" type="submit" class="register-btn">Register</button>
+        </form>
+
+        <div class="register-extra">
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+      </div>
+    </div>
+  <script src="https://upload-widget.cloudinary.com/latest/global/all.js" type="text/javascript"></script>  
+    <script type="module" src="scripts/register.js"></script>
+
+  </body>
+</html>
